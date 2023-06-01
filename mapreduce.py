@@ -2,7 +2,6 @@ import pandas as pd
 from multiprocessing import Pool
 from collections import defaultdict
 
-
 def map_function(data):
     passenger_count = defaultdict(int)
     for row in data:
