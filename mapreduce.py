@@ -23,7 +23,7 @@ def reduce_function(shuffle):
 
 def main():
     # Read data
-    df =  pd.read_csv('data\\AComp_Passenger_data_no_error_DateTime.csv',header=None)
+    df =  pd.read_csv('AComp_Passenger_data_no_error_DateTime.csv',header=None)
     df = df.drop_duplicates()
     df = df.reset_index(drop=True)
     passenger = df.iloc[:,0].tolist()
